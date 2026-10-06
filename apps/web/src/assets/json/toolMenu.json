@@ -1,0 +1,76 @@
+[
+  {
+    "name": "数据查询",
+    "value": "dataQuery",
+    "icon": "icon-sousuo",
+    "children": [
+      {
+        "name": "条件查询",
+        "value": "dataQuery",
+        "icon": "icon-tiaojianchaxun",
+        "type": "dataQuery"
+      },
+      {
+        "name": "拉框查询",
+        "value": "dataQuery",
+        "icon": "icon-lakuangchaxun",
+        "type": "dataQuery"
+      },
+      {
+        "name": "点选查询",
+        "value": "dataQuery",
+        "icon": "icon-dituchaxun-weixuanzhong"
+      },
+      {
+        "name": "关闭点选查询",
+        "value": "dataQuery",
+        "icon": "icon-quxiaochaxun"
+      }
+    ]
+  },
+  {
+    "name": "空间分析",
+    "value": "dataQuery",
+    "icon": "icon-a-kongjianfenxi1",
+    "children": []
+  },
+  {
+    "name": "地图测量",
+    "value": "dataQuery",
+    "icon": "icon-ceju",
+    "children": [
+      {
+        "name": "拾取点位",
+        "value": "dataQuery",
+        "icon": "icon-dianbiaoji"
+      },
+      {
+        "name": "测距",
+        "value": "dataQuery",
+        "icon": "icon-ceju"
+      },
+      {
+        "name": "测面积",
+        "value": "dataQuery",
+        "icon": "icon-shitucemianji"
+      },
+      {
+        "name": "三角测量",
+        "value": "dataQuery",
+        "icon": "icon-sanjiaoceliang",
+        "type": "measure"
+      },
+      {
+        "name": "清除测量",
+        "value": "dataQuery",
+        "icon": "icon-qingchu1"
+      }
+    ]
+  },
+  {
+    "name": "全屏模式",
+    "value": "dataQuery",
+    "icon": "icon-quanping",
+    "children": []
+  }
+]

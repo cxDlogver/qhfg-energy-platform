@@ -1,0 +1,390 @@
+[
+  {
+    "device": "desktop",
+    "route": "home",
+    "metrics": {
+      "performance": {
+        "beforeMedian": 62,
+        "afterMedian": 75,
+        "beforeRange": [
+          61,
+          62
+        ],
+        "afterRange": [
+          75,
+          75
+        ],
+        "changePercent": 20.967741935483872
+      },
+      "first-contentful-paint": {
+        "beforeMedian": 2331.0676000000003,
+        "afterMedian": 618.42325,
+        "beforeRange": [
+          2325.3794000000003,
+          2364.3032000000003
+        ],
+        "afterRange": [
+          617.465,
+          621.4632
+        ],
+        "changePercent": -73.47038541482023
+      },
+      "largest-contentful-paint": {
+        "beforeMedian": 61725.5612,
+        "afterMedian": 59863.775,
+        "beforeRange": [
+          61724.736600000004,
+          61732.827900000004
+        ],
+        "afterRange": [
+          59862.8492,
+          59865.03875
+        ],
+        "changePercent": -3.0162321148730116
+      },
+      "speed-index": {
+        "beforeMedian": 2331.0676000000003,
+        "afterMedian": 735.9307871523598,
+        "beforeRange": [
+          2325.3794000000003,
+          2364.3032000000003
+        ],
+        "afterRange": [
+          676.5470875571158,
+          736.2566232885317
+        ],
+        "changePercent": -68.42945321910186
+      },
+      "total-blocking-time": {
+        "beforeMedian": 63,
+        "afterMedian": 5.999999999999886,
+        "beforeRange": [
+          56,
+          96
+        ],
+        "afterRange": [
+          3.0000000000001137,
+          6
+        ],
+        "changePercent": -90.47619047619065
+      },
+      "cumulative-layout-shift": {
+        "beforeMedian": 0.0366847161429389,
+        "afterMedian": 0.0001502693788470439,
+        "beforeRange": [
+          0.0366847161429389,
+          0.0366847161429389
+        ],
+        "afterRange": [
+          0.0001502693788470439,
+          0.0001502693788470439
+        ],
+        "changePercent": -99.59037606216842
+      },
+      "total-byte-weight": {
+        "beforeMedian": 82134717,
+        "afterMedian": 80356697,
+        "beforeRange": [
+          82134717,
+          82134717
+        ],
+        "afterRange": [
+          80356697,
+          80356697
+        ],
+        "changePercent": -2.1647606090856804
+      }
+    }
+  },
+  {
+    "device": "desktop",
+    "route": "data",
+    "metrics": {
+      "performance": {
+        "beforeMedian": 55.00000000000001,
+        "afterMedian": 55.00000000000001,
+        "beforeRange": [
+          55.00000000000001,
+          60
+        ],
+        "afterRange": [
+          55.00000000000001,
+          70
+        ],
+        "changePercent": 0
+      },
+      "first-contentful-paint": {
+        "beforeMedian": 16348.494499999999,
+        "afterMedian": 8963.8094,
+        "beforeRange": [
+          2468.8857,
+          16351.689175000001
+        ],
+        "afterRange": [
+          784.8558,
+          8964.38585
+        ],
+        "changePercent": -45.17042899577083
+      },
+      "largest-contentful-paint": {
+        "beforeMedian": 16634.5107,
+        "afterMedian": 9423.8094,
+        "beforeRange": [
+          16616.971299999997,
+          16649.0608
+        ],
+        "afterRange": [
+          9423.64185,
+          9444.385849999999
+        ],
+        "changePercent": -43.34784130440338
+      },
+      "speed-index": {
+        "beforeMedian": 16348.494499999999,
+        "afterMedian": 8963.8094,
+        "beforeRange": [
+          2468.8857,
+          16351.689175000001
+        ],
+        "afterRange": [
+          1581.2075372936158,
+          8964.38585
+        ],
+        "changePercent": -45.17042899577083
+      },
+      "total-blocking-time": {
+        "beforeMedian": 0,
+        "afterMedian": 0,
+        "beforeRange": [
+          0,
+          105.2999749999999
+        ],
+        "afterRange": [
+          0,
+          129
+        ],
+        "changePercent": null
+      },
+      "cumulative-layout-shift": {
+        "beforeMedian": 0.037254221323170945,
+        "afterMedian": 0.0007197745590790897,
+        "beforeRange": [
+          0.037254221323170945,
+          0.037254221323170945
+        ],
+        "afterRange": [
+          0.0007197745590790897,
+          0.0007197745590790897
+        ],
+        "changePercent": -98.06793825366735
+      },
+      "total-byte-weight": {
+        "beforeMedian": 20228797,
+        "afterMedian": 11277162,
+        "beforeRange": [
+          20228797,
+          20228797
+        ],
+        "afterRange": [
+          11277162,
+          11277162
+        ],
+        "changePercent": -44.25193945047746
+      }
+    }
+  },
+  {
+    "device": "mobile",
+    "route": "home",
+    "metrics": {
+      "performance": {
+        "beforeMedian": 47,
+        "afterMedian": 67,
+        "beforeRange": [
+          47,
+          47
+        ],
+        "afterRange": [
+          67,
+          67
+        ],
+        "changePercent": 42.5531914893617
+      },
+      "first-contentful-paint": {
+        "beforeMedian": 12906.7066,
+        "afterMedian": 2859.5490499999996,
+        "beforeRange": [
+          12900.3394,
+          12929.5557
+        ],
+        "afterRange": [
+          2859.541875,
+          2861.616675
+        ],
+        "changePercent": -77.84447157108228
+      },
+      "largest-contentful-paint": {
+        "beforeMedian": 384591.112375,
+        "afterMedian": 373592.73395,
+        "beforeRange": [
+          384589.21975,
+          384592.43275000004
+        ],
+        "afterRange": [
+          373592.72062499996,
+          373596.573825
+        ],
+        "changePercent": -2.8597588636619107
+      },
+      "speed-index": {
+        "beforeMedian": 12906.7066,
+        "afterMedian": 2859.5490499999996,
+        "beforeRange": [
+          12900.3394,
+          12929.5557
+        ],
+        "afterRange": [
+          2859.541875,
+          2861.616675
+        ],
+        "changePercent": -77.84447157108228
+      },
+      "total-blocking-time": {
+        "beforeMedian": 358,
+        "afterMedian": 188,
+        "beforeRange": [
+          353,
+          373
+        ],
+        "afterRange": [
+          185,
+          190
+        ],
+        "changePercent": -47.486033519553075
+      },
+      "cumulative-layout-shift": {
+        "beforeMedian": 0,
+        "afterMedian": 0.00002558481711580784,
+        "beforeRange": [
+          0,
+          0
+        ],
+        "afterRange": [
+          0,
+          0.00002558481711580784
+        ],
+        "changePercent": null
+      },
+      "total-byte-weight": {
+        "beforeMedian": 82134717,
+        "afterMedian": 80356697,
+        "beforeRange": [
+          82134717,
+          82134717
+        ],
+        "afterRange": [
+          80356697,
+          80356697
+        ],
+        "changePercent": -2.1647606090856804
+      }
+    }
+  },
+  {
+    "device": "mobile",
+    "route": "data",
+    "metrics": {
+      "performance": {
+        "beforeMedian": 55.00000000000001,
+        "afterMedian": 43,
+        "beforeRange": [
+          55.00000000000001,
+          55.00000000000001
+        ],
+        "afterRange": [
+          42,
+          55.00000000000001
+        ],
+        "changePercent": -21.818181818181827
+      },
+      "first-contentful-paint": {
+        "beforeMedian": 101567.5857,
+        "afterMedian": 3904.7124000000003,
+        "beforeRange": [
+          101342.70030000001,
+          101585.0416
+        ],
+        "afterRange": [
+          3904.010125,
+          54979.431300000004
+        ],
+        "changePercent": -96.15555260756778
+      },
+      "largest-contentful-paint": {
+        "beforeMedian": 102921.58245,
+        "afterMedian": 57304.4313,
+        "beforeRange": [
+          102615.7336,
+          102937.2317
+        ],
+        "afterRange": [
+          57303.43725,
+          57379.0392
+        ],
+        "changePercent": -44.3222403543602
+      },
+      "speed-index": {
+        "beforeMedian": 101567.5857,
+        "afterMedian": 4643.19537788584,
+        "beforeRange": [
+          101342.70030000001,
+          101585.0416
+        ],
+        "afterRange": [
+          4582.352490883302,
+          54979.431300000004
+        ],
+        "changePercent": -95.42846731475882
+      },
+      "total-blocking-time": {
+        "beforeMedian": 0,
+        "afterMedian": 998,
+        "beforeRange": [
+          0,
+          0
+        ],
+        "afterRange": [
+          0,
+          1076.5
+        ],
+        "changePercent": null
+      },
+      "cumulative-layout-shift": {
+        "beforeMedian": 0,
+        "afterMedian": 0,
+        "beforeRange": [
+          0,
+          0
+        ],
+        "afterRange": [
+          0,
+          0
+        ],
+        "changePercent": null
+      },
+      "total-byte-weight": {
+        "beforeMedian": 20226242,
+        "afterMedian": 11274607,
+        "beforeRange": [
+          20226242,
+          20226242
+        ],
+        "afterRange": [
+          11274607,
+          11274607
+        ],
+        "changePercent": -44.25752940165553
+      }
+    }
+  }
+]

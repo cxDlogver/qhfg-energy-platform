@@ -1,0 +1,480 @@
+{
+  "scope": "isolated fixture, 1920x1080; fixed Date and first original animation frame for screenshot only; CSS animations/transition paused; newly connected 3D button masked equally. Does not validate real GIS imagery or dynamic animation, which has separate full-frame proof.",
+  "results": [
+    {
+      "route": "home",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": {
+            "box": [
+              477.19,
+              170,
+              965.61,
+              249.8
+            ],
+            "font": "500 48px / 76.8px sans-serif",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)"
+          }
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": {
+            "box": [
+              477.19,
+              170,
+              965.61,
+              249.8
+            ],
+            "font": "500 48px / 76.8px sans-serif",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)"
+          }
+        }
+      ]
+    },
+    {
+      "route": "data",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": {
+            "box": [
+              30,
+              80,
+              352,
+              136.39
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "1px solid rgba(0, 0, 0, 0.18)"
+          },
+          ".result_box": {
+            "box": [
+              30,
+              721.5,
+              360,
+              353.5
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "1px solid rgba(0, 0, 0, 0.18)"
+          },
+          ".mapInfo": {
+            "box": [
+              1470.53,
+              1031.91,
+              429.47,
+              28.09
+            ],
+            "font": "14px / 16.1px SoureHanSans",
+            "color": "rgb(200, 216, 235)",
+            "background": "rgba(30, 49, 75, 0.8)",
+            "border": "0px none rgb(200, 216, 235)"
+          },
+          ".chart_box": {
+            "box": [
+              1350,
+              80,
+              540,
+              770
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "0px none rgb(0, 0, 0)"
+          },
+          ".login": null,
+          ".page1 h1": null
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": {
+            "box": [
+              30,
+              80,
+              352,
+              136.39
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "1px solid rgba(0, 0, 0, 0.18)"
+          },
+          ".result_box": {
+            "box": [
+              30,
+              721.5,
+              360,
+              353.5
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "1px solid rgba(0, 0, 0, 0.18)"
+          },
+          ".mapInfo": {
+            "box": [
+              1470.53,
+              1031.91,
+              429.47,
+              28.09
+            ],
+            "font": "14px / 16.1px SoureHanSans",
+            "color": "rgb(200, 216, 235)",
+            "background": "rgba(30, 49, 75, 0.8)",
+            "border": "0px none rgb(200, 216, 235)"
+          },
+          ".chart_box": {
+            "box": [
+              1350,
+              80,
+              540,
+              770
+            ],
+            "font": "14px / 16.1px sans-serif",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(255, 255, 255, 0.4)",
+            "border": "0px none rgb(0, 0, 0)"
+          },
+          ".login": null,
+          ".page1 h1": null
+        }
+      ]
+    },
+    {
+      "route": "about",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        }
+      ]
+    },
+    {
+      "route": "login",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": {
+            "box": [
+              477.19,
+              170,
+              965.61,
+              249.8
+            ],
+            "font": "500 48px / 76.8px sans-serif",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)"
+          }
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": {
+            "box": [
+              477.19,
+              170,
+              965.61,
+              249.8
+            ],
+            "font": "500 48px / 76.8px sans-serif",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)"
+          }
+        }
+      ]
+    },
+    {
+      "route": "nav-page1",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        }
+      ]
+    },
+    {
+      "route": "nav-page2",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        }
+      ]
+    },
+    {
+      "route": "nav-page3",
+      "mismatchedPixels": 0,
+      "totalPixels": 2073600,
+      "percent": 0,
+      "computedStylesEqual": true,
+      "styles": [
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        },
+        {
+          ".header": {
+            "box": [
+              0,
+              0,
+              1920,
+              70
+            ],
+            "font": "16px / 18.4px sans-serif",
+            "color": "rgb(0, 112, 192)",
+            "background": "rgb(255, 255, 255)",
+            "border": ""
+          },
+          ".condition_box": null,
+          ".result_box": null,
+          ".mapInfo": null,
+          ".chart_box": null,
+          ".login": null,
+          ".page1 h1": null
+        }
+      ]
+    }
+  ]
+}

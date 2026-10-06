@@ -1,0 +1,13 @@
+{
+  "发电侧/风力发电/低空风电/陆上风电/潜力数据/2.5MW/容量因子/10km": {
+    "tables": {
+      "yr/国家": "pg_wind_low_on_pot_2_5mw_cf_10km_yr_cntry",
+      "mo_2021/国家": "pg_wind_low_on_pot_2_5mw_cf_10km_mo_2021_cntry"
+    },
+    "maps": {
+      "/io/data/发电侧/风力发电/低空风电/陆上风电/潜力数据/2.5MW/容量因子/10km/年/2021.qgs": [
+        "2021.tif"
+      ]
+    }
+  }
+}

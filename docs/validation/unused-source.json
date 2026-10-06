@@ -1,0 +1,24 @@
+{
+  "reachable": 39,
+  "removed": [
+    "assets/icon/iconfont.js",
+    "components/dataService/chart/original_options2_en.js",
+    "components/dataService/common/Legend.vue",
+    "components/dataService/common/MapInfo.vue",
+    "components/home/nav-page.vue",
+    "components/home/theme.vue",
+    "components/home/theme1/paper4.vue",
+    "components/home/themeDistribute.vue",
+    "config/qgis.js",
+    "plugin/v-chart.js",
+    "stores/layer.js",
+    "stores/store.js",
+    "utils/cesiumUtils.js",
+    "utils/CoordTransform.js",
+    "utils/downloadFile.js",
+    "utils/drag.js",
+    "utils/formatUtils.js",
+    "utils/MeasureTool.js"
+  ],
+  "method": "Vue SFC and Babel AST import graph from main.js/router; local auto-discovery disabled; files preserved privately in .local/unused-source and original source untouched."
+}

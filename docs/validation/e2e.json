@@ -1,0 +1,35 @@
+{
+  "environment": "local fixture; not production acceptance",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "checks": [
+    "unauthenticated route redirects",
+    "direct empty cache has no default layer",
+    "menu creates 2021 default and valid legend",
+    "2D page does not load Cesium",
+    "2D point updates numeric result, coordinates, chart and table",
+    "repeated point uses 5-minute cache",
+    "agreement download contains real XLSX and Chinese columns",
+    "description dialog",
+    "four-level annual filter adds a second result",
+    "results are mutually exclusive",
+    "multi-year average preserves complete layer name",
+    "3D click stops rotation and identifies shared business layer",
+    "hidden 3D renders zero frames and stops loop",
+    "dimension switch preserves last 3D camera",
+    "keep-alive deactivation pauses 3D",
+    "keep-alive return keeps selected dimension",
+    "English menu persists language",
+    "clear removes both language caches",
+    "about, three directories and ten article routes render",
+    "zero uncaught browser errors"
+  ],
+  "timings": {
+    "pointToTableMs": 197.61130000000003,
+    "first3DFrameMs": 757.1154999999999
+  },
+  "errors": [],
+  "runAt": "2026-10-06T20:52:37.613Z"
+}

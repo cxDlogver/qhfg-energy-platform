@@ -1,0 +1,17 @@
+node_modules/
+.local/
+.env
+.env.*
+!.env.example
+apps/web/dist/
+apps/server/dist/
+apps/web/public/cesium/
+apps/web/public/static/
+coverage/
+artifacts/
+*.log
+.DS_Store
+.vscode/
+.idea/
+.svn/
+*.tsbuildinfo

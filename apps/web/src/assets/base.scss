@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body,#app{
+  width: 100vw;
+  height: 100vh;
+}
+// #app{
+//   width: calc(1920px/1.25);
+//   height: calc(1080px/1.25);
+// }
+a{
+  text-decoration: none;
+  color: #fff;
+}
+@font-face {
+  font-family: 'YouSheBiaoTiHei';
+  src: url('./font/YouSheBiaoTiHei-2.woff2');
+}
+
+@font-face {
+  font-family: 'SoureHanSans';
+  src: url('./font/SourceHanSansOLD-Light-2.woff2');
+}
+
+@font-face {
+  font-family: '液晶数字字体';
+  src: url('./font/液晶数字字体.woff2');
+}
+.module_control{
+  color: #fff;
+  // background-color: rgba(9, 32, 60, 1);
+  background-color: #fff;
+  border-radius: 4px;
+  // border: 1px solid rgba(27, 65, 114, 0.95);
+  // border: 1px solid #ccc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  .control_header {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: rgba(27, 65, 114, 0.95);
+    // background-color:#5590FF;
+    // background-color: #100c2a;
+    border-radius: 4px 4px 0 0;
+    user-select: none;
+    cursor: move;
+    .icon-guanbi{
+      font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .control_body {
+    padding: 10px;
+  }
+  .control_footer{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // background-color: skyblue;
+  }
+}
+
+.compass {
+  z-index: 100;
+  top: 120px !important;
+  right: 10px !important;
+}
+
+.navigation-controls {
+  z-index: 100;
+  top: 220px !important;
+  right: 40px !important;
+  background-color: rgba(46, 68, 96, 0.5) !important;
+}
+
+.distance-legend {
+  z-index: 100;
+  height: 28px;
+  bottom: -2px !important;
+  left: -2px !important;
+  // background-color: rgba(46, 68, 96, 0.5) !important;
+  border-radius: 4px !important;
+}
+
+/*定义滚动条高宽及背景
+高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent; // 这里默认隐藏
+}
+
+// 悬浮时才显示
+:hover::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+/*定义滚动条轨道
+内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/*定义滑块
+内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: transparent;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+}
+
+.el-card {
+  background-color: #fff !important;
+  // border: 1px solid #161e25 !important;
+}
+
+
+.el-popper {
+  background-color: rgba(255, 255, 255) !important;
+  .el-picker-panel {
+    background-color: transparent !important;
+    .el-picker-panel__footer{
+        background-color: transparent !important;
+        .el-button {
+          background-color: rgb(64, 158, 255);
+          color: #fff;
+        }
+        .el-button:hover {
+          background-color: #007bff;
+        }
+    }
+  }
+}
+
+.el-message-box {
+  width: 1600px;
+  max-width: 700px;
+  min-width: 700px;
+  max-height: 90vh;
+}
+.el-message-box__content {
+  max-height: 75vh;
+  min-height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  line-height: 1.8;
+  font-size: 14px;
+  text-align: left;
+}
+
+.el-message-box__content > div {
+  text-indent: 2em;
+  margin-bottom: 16px;
+}
+
+.el-message-box__content ol {
+  list-style-position: inside;
+}
+
+.el-message-box__content li {
+  text-indent: 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.el-message-box__content li::marker {
+  margin-right: 0.5em;
+  letter-spacing: normal;
+}
+// Contain the shell margin so it cannot move the body after the first paint.
+#app { display: flow-root; }

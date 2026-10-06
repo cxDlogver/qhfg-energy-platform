@@ -1,0 +1,343 @@
+{
+  "message": {
+    "systemTitle": "可再生能源分析与系统优化平台（REASON）",
+    "systemTitleinShort": "可再生能源分析与系统优化平台（REASON）",
+    "home": "首页",
+    "about": "关于",
+    "dataService": "数据服务",
+    "language": "切换语言",
+    "conditions": "筛选条件",
+    "edit": "编辑",
+    "noData": "暂无数据",
+    "result": "筛选结果",
+    "clear": "清除",
+    "fps": "帧率",
+    "lon": "经度",
+    "lat": "纬度",
+    "alt": "海拔",
+    "heading": "航偏角",
+    "pitch": "俯仰角",
+    "roll": "翻滚角",
+    "mousePosition": "鼠标位置",
+    "meter": "米",
+    "return": "返回",
+    "Home": {
+      "friendshipLink": "友情链接",
+      "friendshipLink1": "清华大学",
+      "friendshipLink2": "清华大学环境学院",
+      "friendshipLink3": "清华大学碳中和研究院",
+      "contactUs": "联系我们",
+      "address": "地址：北京市海定区清华大学环境学院",
+      "post_code":"邮编：100084",
+      "telephone":"电话：+86-010-62784521",
+      "fax" :"传真：+86-010-62785687",
+      "followUs": "关注我们",
+      "qr_code1":"清华大学环境学院",
+      "qr_code2":"清华大学碳中和研究院",
+      "theme1": "可再生能源资源利用现状与潜力洞察",
+      "theme2": "碳中和目标下可再生能源发展路径",
+      "theme3": "高比例可再生能源系统风险与韧性提升",
+      "login": "登录",
+      "register": "注册",
+      "logout": "退出登录"
+    },
+    "legend": "图例",
+    "confirm": "确定",
+    "auth":{
+      "loginRequired": "请先登录",
+      "loginExpired": "登录已过期，请重新登录"
+    },
+    "timeOut":"时间超时，稍后重试",
+    "dataException": "数据异常"
+  },
+  "login": {
+    "loginPage": "登录页面",
+    "userName": "用户名",
+    "userNamePlaceholder": "请输入用户名",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "login": "登录",
+    "register": "立即注册",
+    "noAccount": "没有账号？",
+    "userNameAndPasswordRequired": "请输入用户名和密码",
+    "loginSuccess": "登录成功",
+    "loginFailed": "登录失败，用户名密码错误",
+    "forgotPassword":"忘记密码"
+  },
+  "register": {
+    "registerPage": "注册页面",
+    "userName": "用户名",
+    "userNamePlaceholder": "请输入用户名",
+    "userNameTip": "用户名至少4个字符",
+    "countryCode": "国家/地区",
+    "countryCodePlaceholder": "请选择国家/地区",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "passwordTip": "密码至少6个字符",
+    
+    "password_confirm": "确认密码",
+    "passwordPlaceholder_confirm": "请再次输入密码",
+    "passwordTip_confirm": "密码不一致",
+
+    "realName": "真实姓名",
+    "realNamePlaceholder": "请输入真实姓名",
+    "realNameTip": "请输入真实姓名",
+    "phone": "手机号",
+    "phonePlaceholder": "请输入手机号",
+    "phoneTip": "请输入手机号",
+    "phoneInternationalTip": "请输入正确的国际手机号",
+    "phoneLocalTip": "请输入正确的国内手机号",
+    "email": "邮箱",
+    "emailPlaceholder": "请输入邮箱",
+    "emailTip1": "请输入邮箱",
+    "emailTip2": "邮箱格式不正确",
+    "unit": "单位",
+    "unitPlaceholder": "请输入单位",
+    "unitTip": "请输入正确单位",
+    "identity": "身份",
+    "identityPlaceholder": "请选择身份",
+    "identityTip": "请选择身份",
+    "identity1":"教育/科研从业者",
+    "identity2":"在读学生",
+    "identity3":"企业人员",
+    "identity4":"政府人员",
+    "identity5":"NGO/非营利组织人员",
+    "identity6":"公众/爱好者",
+    "identity7":"其他",
+    "identifyingCode": "验证码",
+    "identifyingCodePlaceholder": "请输入验证码",
+    "identifyingCodeTip": "请输入验证码",
+    "code": {
+      "getCode": "获取验证码",
+      "sending": "发送中...",
+      "codeSent": "验证码已发送，请查收邮箱",
+      "retryAfter": "{count}s后重试",
+      "emailRequired": "请先输入邮箱",
+      "sendFailed": "验证码发送失败，请检查邮箱格式或网络"
+    },
+    "register": "注册",
+    "login": "立即登录" ,
+    "hasAccount": "已有账号？",
+    "registerSuccess": "注册成功",
+    "error": {
+      "codeError": "验证码错误",
+      "usernameExists": "用户名已存在",
+      "usernameLength": "用户名长度需在 4 - 20 个字符，只能包含字母、数字和下划线",
+      "emailExists": "邮箱已被注册",
+      "phoneExists": "电话已被注册",
+      "registerFailed": "注册失败"
+    }
+  },
+  "chart": {
+    "selectRegion": "区域",
+    "clear": "清除所选项",
+    "download": "下载",
+    "year": "年",
+    "month": "月",
+    "hour": "小时",
+    "elSelectPlaceholder": "请选择时间尺度",
+    "annualAverage": "多年平均",
+    "yearPlaceholder": "请选择年份",
+    "monthPlaceholder": "请选择月份",
+    "hourPlaceholder": "请选择小时",
+    "startHourPlaceholder": "开始时间",
+    "endHourPlaceholder": "结束时间",
+    "dataDescription":"数据说明",
+    "dataDescriptionDetail":"数据来源说明",
+    "noParamsSelected": "没有选择参数",
+    "hasNoPermission": "无权限访问"
+  },
+  "forgotPassword":{
+    "resetTitle": "重置密码",
+    "platformTitle": "可再生能源分析与系统优化平台（REASON）",
+    "email": "邮箱",
+    "emailPlaceholder": "请输入注册邮箱",
+    "getCode": "获取验证码",
+    "code": "验证码",
+    "codePlaceholder": "请输入验证码",
+    "newPassword": "新密码",
+    "newPasswordPlaceholder": "请输入新密码",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "请再次输入新密码",
+    "resetBtn": "重置密码",
+    "backLogin": "返回登录"
+  },
+  "conditionBox": {
+    "time": "时间分辨率",
+    "area": "空间分辨率",
+    "year": "年",
+    "month": "月",
+    "hour": "小时",
+    "annualAverage": "多年平均",
+    "yearPlaceholder": "请选择年份",
+    "monthPlaceholder": "请选择月份",
+    "hourPlaceholder": "请选择小时",
+    "startHourPlaceholder": "开始时间",
+    "endHourPlaceholder": "结束时间",
+    "addNode": "添加节点",
+    "nodeName": "中文名称",
+    "nodeNamePlaceholder": "请输入中文名称",
+    "nodeNameEn": "英文名称",
+    "nodeNameEnPlaceholder": "请输入英文名称",
+    "nodeType": "节点类型",
+    "nodeTypePlaceholder": "请选择节点类型",
+    "cancel": "取消",
+    "confirm": "确定",
+    "error": {
+      "nodeNameEmpty": "节点中文名称不能为空！",
+      "nodeNameEnEmpty": "节点英文名称不能为空！"
+    },
+    "addSuccess":"添加成功！",
+    "addFail":"添加失败！",
+    "editSuccess":"编辑成功！",
+    "editFail":"编辑失败！",
+    "deleteSuccess":"删除成功！",
+    "deleteFail":"删除失败！",
+    "deleteConfirm":"确定要删除该节点吗？此操作不可恢复！",
+    "warning": "警告",
+    "nodeEmpty":"节点名称不能为空！"
+  },
+  "result": {
+    "loading": "加载中...",
+    "dataExists": "数据已存在",
+    "noLegend": "暂无图例",
+    "legendError": "图例生成失败"
+  },
+  "agreement": {
+    "title": "可再生能源分析与系统优化平台（REASON）数据使用协议",
+    "content": "数据使用者（下称用户）在使用“可再生能源分析与系统优化平台（REASON）”平台提供的数据产品之前，应当仔细阅读并同意本协议的全部内容。用户使用直接从本平台直接获取或从其他途径间接获取的本平台数据的行为，均视为已充分理解并接受本协议的全部内容。若用户对本协议的任何条款有异议，请立即停止使用本平台及平台数据。协议一经变动，将在相关页面提示修改内容；用户如不同意协议的修改版本，应放弃继续访问平台及使用本平台提供的任何数据、产品和服务；用户如在协议修改后继续访问平台或使用平台数据，则视为已经接受修改后的协议。",
+    "clause1": "\"可再生能源分析与系统优化平台（REASON）\"平台致力于提供高质量的风光水等资源开发潜力数据，平台不对任何因使用本平台而产生的法律风险负责，数据使用者不得使用从平台直接或间接获取的数据资料从事危害国家安全、社会公共利益和他人合法权益的活动。平台对于数据使用者基于数据所得出的任何结果和言论均不承担责任。",
+    "clause2": "平台提供的数据受原始数据来源、模型算法、参数化方案、计算条件及自然环境变化等因素影响，可能存在固有误差或不确定性。用户应充分了解数据的局限性，并自行评估其适用性。本平台不对因数据使用导致的直接或间接后果承担责任。",
+    "clause3": "我们高度重视用户隐私安全，将采取合理的安全措施保护用户个人信息，但由于互联网的固有特性，无法保证数据的绝对安全。因此，用户在使用平台时，应谨慎处理自己的个人信息。",
+    "clause4": "如果平台出现任何技术问题，我们将尽快修复。但是，我们不对由此造成的任何损失承担责任。",
+    "clause5": "在会议报告、论文发表等各种方式使用本平台数据时，（1）用户需致谢\"可再生能源分析与系统优化平台（REASON）\"；（2）发表论文时需引用数据提供者的相关研究成果。具体引用方式请见相关数据说明。",
+    "clause6": "本平台提供的数据仅限于非商业用途使用，未经\"可再生能源分析与系统优化平台（REASON）\"平台书面授权之前，任何单位和个人不得将数据用于商业用途。商业机构使用本平台数据的行为均被视为商业用途，需事先获得本平台团队书面授权。申请将本平台数据用于商业用途或商业机构申请使用本平台数据请使用单位邮箱联系：xuchun{'@'}tsinghua.edu.cn。",
+    "clause7": "本平台数据不得用于司法途径，并且平台不对由此产生的任何后果承担责任。",
+    "clause8": "用户保证只将平台授权使用的数据资料用于本人的研究，不得私自有偿、无偿向第三方转让本平台数据及网站账号，用户应自行承担因违反此要求而导致的责任。本平台团队保留追究上述行为人法律责任的权利。",
+    "clause9": "用户在使用数据过程中需保证数据的完整性和独立性。未经本平台团队书面授权，任何用户不得将从平台获得的数据以原始形式或修改后的形式用于其他数据产品或模型。对于违反协议的数据使用者，平台有权随时要求其停止对数据的使用和保存。对于其所造成的任何形式的损害，有权进行法律追诉。",
+    "clause10": "对本协议的解释、修改及更新权均属于本平台团队所有。本平台数据产品会进行定期更新，请注册用户直接从平台下载，以获取最新版本信息。请用户妥善保管自己的账号、密码及其他注册资料，如果发现账号被盗用或者其他安全问题，请立即联系本平台工作人员进行处理。本平台将不承担由于用户自身原因导致的账号和密码泄露、丢失或其他安全问题所造成的损失。",
+    "confirmButton": "同意并下载",
+    "cancelButton": "取消",
+    "cancelMessage": "已取消下载"
+  },
+  "about": {
+    "title": "关于我们",
+    "background": {
+      "title": "平台背景",
+      "content1": "气候变化和能源安全问题是当前突出的全球性挑战，积极发展可再生能源，推动经济社会绿色低碳转型，已经成为国际社会应对全球气候变化的普遍共识。我国提出了“四个革命、一个合作”能源安全新战略，并在“双碳”目标引领下，为新时代可再生能源高质量发展提供了根本遵循。可再生能源，如风电、太阳能发电及水电等，以其清洁、可再生、环境友好等特性，被视为未来能源体系的重要组成部分。然而，可再生能源的开发与利用面临多重难题，其资源潜力分布不均，资源特性各异，同时还受到技术成熟度、经济可行性、生态环境保护及政策导向等多重约束。",
+      "content2": "为科学、系统、全面地评估全球可再生能源开发潜力，推动能源结构绿色低碳转型，促进能源可持续发展，可再生能源分析与系统优化平台（REASON）平台应运而生。该平台旨在聚焦并及时回应国际社会在可再生能源等领域的热点关切问题。通过高精度、多时空尺度的数据智能分析技术，为高校和科研机构、政府机构及能源行业等提供非商业用途的全面、准确、及时的可再生能源资源开发潜力和现状数据，为能源规划、政策制定、投资决策等提供科学依据，助力全球和我国能源体系向更加清洁、低碳、高效的方向加速转型。同时，该平台有助于提升我国在全球可再生能源领域的竞争力和影响力，为构建人类命运共同体贡献中国智慧和中国方案。"
+    },
+    "features": {
+      "title": "平台功能",
+      "content1": "REASON平台基于",
+      "highlight1": "",
+      "content2": "多源异构数据融合方法构建小时级公里级高精度同化数据库，融合机器学习与深度学习的全技术种类风光水等清洁能源发电资源动态测算模型，构建涵盖小时级至气候尺度的多时空资源图谱。",
+      "content3": "该平台提供",
+      "highlight2": "二维和三维全景可视化功能",
+      "content4": "，支持从网格到全球范围的可再生能源分布热力图，开展多尺度资源出力特性的多时间维度解析，重点突破中国县域级精细化表征。",
+      "content5": "平台实时追踪国际社会可再生能源热点关切问题，为能源规划和政策制定等提供数据驱动的智能决策支持。"
+    },
+    "team": {
+      "title": "平台团队",
+      "intro": "REASON平台由清华大学碳中和研究所、清华大学环境学院开发和维护。",
+      "developers": {
+        "title": "研发人员"
+        
+      },
+      "advisors": {
+        "title": "顾问专家"
+        
+      }
+    },
+    "thanks": {
+      "title": "致谢",
+      "content": "REASON平台感谢米塔碳（杭州）智能科技有限公司的支持，获得了国家自然科学基金（青年基金A类和重点专项项目）、国家重点研发计划、中国能源基金会、云南省科技计划项目、清华东方电气未来能源与装备联合研究院项目等支持。"
+    }
+  },
+  "theme1": {
+    "paper1":{
+      "title":"屋顶光伏的动态气候价值与潜力"
+    },
+    "paper2":{
+      "title":"大规模山区风电场对京津冀地区冬季空气质量的影响"
+    },
+    "paper3":{
+      "title":"我国太阳能发电平价路径与并网潜力"
+    },
+    "paper4":{
+      "title":"我国陆上风电跨区域联合并网及开发优化布局"
+    }
+  },
+  "theme2": {
+    "paper1":{
+      "title":"中国碳中和目标下的风电时空碳足迹及相关成本"
+    },
+    "paper2":{
+      "title":"碳中和目标下可再生能源发展路径"
+    },
+    "paper3":{
+      "title":"中国碳中和目标下的风光技术展望"
+    },
+    "paper4":{
+      "title":"全球光伏产业链温室气体排放与减排的时空分布特征"
+    }
+  },
+  "theme3": {
+    "paper1":{
+      "title":"中国可再生能源发电内在的时空不确定性研究"
+    }
+  },
+  "common":{
+    "back":"返回",
+    "theme":"前沿探索",
+    "back1":"返回主页",
+    "copyright":"清华大学环境学院 版权所有",
+    "link":"论文链接",
+    "related information":"相关信息",
+    "unknownError": "未知错误",
+    "locationUnsupported": "您的浏览器不支持地理定位",
+    "locationDenied": "您拒绝了定位权限，请在浏览器设置中开启",
+    "locationUnavailable": "定位信息无法获取",
+    "locationTimeout": "定位请求超时，请尝试刷新页面或检查网络"
+  },
+  "weather":{
+    "sunny": "晴朗",
+    "cloudy": "多云",
+    "few clouds": "少云",
+    "partly cloudy": "局部多云",
+    "overcast": "阴天",
+    "shower rain fill": "阵雨",
+    "heavy shower rain": "大阵雨",
+    "thundershower": "雷阵雨",
+    "light rain": "小雨",
+    "moderate rain": "中雨",
+    "heavy rain": "大雨",
+    "extreme rain": "特大暴雨",
+    "drizzle rain": "毛毛雨",
+    "storm": "风暴",
+    "heavy storm": "强风暴",
+    "severe storm": "特强风暴",
+    "freezing rain": "冻雨",
+    "light snow": "小雪",
+    "moderate snow": "中雪",
+    "heavy snow": "大雪",
+    "snowstorm": "暴风雪",
+    "sleet": "雨夹雪",
+    "rain and snow": "雨雪",
+    "shower snow": "阵雪",
+    "snow flurry": "小雪阵",
+    "hot": "炎热",
+    "cold": "寒冷",
+    "fetchFailed": "获取天气失败",
+    "timeout": "天气请求超时",
+    "humidity": "湿度",
+    "wind": "风",
+    "windLevel": "等级",
+    "loading": "正在加载天气...",
+    "currentLocation": "当前位置",
+    "humidityLabel": "湿度"
+
+
+  }
+
+}

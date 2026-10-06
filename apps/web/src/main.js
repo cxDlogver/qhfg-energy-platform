@@ -1,0 +1,13 @@
+import './assets/base.scss';
+import './assets/icon/iconfont.css';
+import 'element-plus/theme-chalk/index.css';
+import 'ant-design-vue/dist/reset.css';
+import {createApp} from 'vue';
+import {createPinia} from 'pinia';
+import App from './App.vue';
+import router from './router/index.js';
+import {i18n} from './config/i18n.js';
+const app=createApp(App);
+app.use(createPinia());app.use(router);app.use(i18n);app.mount('#app');
+export {i18n};
+export default app;

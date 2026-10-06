@@ -1,0 +1,32 @@
+[
+  {
+    "source": "YouSheBiaoTiHei-2.ttf",
+    "target": "YouSheBiaoTiHei-2.woff2",
+    "beforeBytes": 1414784,
+    "afterBytes": 632000,
+    "glyphs": 7194,
+    "cmapCount": 7183,
+    "allGlyphOutlinesSha256": "015581f3b5bbcfe05c2f7f3ef77127f3df3726f21bb27df390ebb17f7226d083",
+    "metricsEqual": true
+  },
+  {
+    "source": "SourceHanSansOLD-Light-2.otf",
+    "target": "SourceHanSansOLD-Light-2.woff2",
+    "beforeBytes": 17840436,
+    "afterBytes": 10467328,
+    "glyphs": 65535,
+    "cmapCount": 44683,
+    "allGlyphOutlinesSha256": "f61708930d156a720da7808a0cb6bc4c27fecc9712e0369ee2b54e320ebdad99",
+    "metricsEqual": true
+  },
+  {
+    "source": "液晶数字字体.TTF",
+    "target": "液晶数字字体.woff2",
+    "beforeBytes": 54904,
+    "afterBytes": 21332,
+    "glyphs": 296,
+    "cmapCount": 258,
+    "allGlyphOutlinesSha256": "df553b0d2a00cdb93d9e6cc880d0aea02c64d0ef99b4ac7753947d60aead880c",
+    "metricsEqual": true
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "qhfg-energy-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test:e2e": "node scripts/e2e.mjs",
+    "perf:baseline": "node scripts/lighthouse.mjs baseline",
+    "perf:optimized": "node scripts/lighthouse.mjs optimized",
+    "perf:compare": "node scripts/compare-performance.mjs",
+    "assets:optimize": "node scripts/optimize-assets.mjs",
+    "baseline:build": "node scripts/baseline.mjs",
+    "security:check": "node scripts/check-public-files.mjs"
+  },
+  "devDependencies": {
+    "chrome-launcher": "1.2.1",
+    "lighthouse": "13.5.0",
+    "playwright": "1.62.1",
+    "sharp": "0.35.4",
+    "pixelmatch": "7.2.0",
+    "typescript": "5.9.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.10.1",
+    "prettier": "3.6.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild"
+    ]
+  }
+}

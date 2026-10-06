@@ -1,0 +1,7 @@
+{
+  "runAt": "2026-10-06T21:00:31.481Z",
+  "files": 290,
+  "bytes": 185358027,
+  "findings": [],
+  "scope": "candidate files excluding gitignore-generated/private folders; values never recorded; examples and fixture passwords are intentional. This automated scan complements review, not a claim of universal secret detection."
+}
