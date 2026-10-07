@@ -1,0 +1,198 @@
+{
+  "provider": "source",
+  "scope": "data route only; distinct from fixture baseline",
+  "runs": [
+    {
+      "variant": "restored-source",
+      "device": "desktop",
+      "route": "data",
+      "run": 1,
+      "fetchTime": "2026-10-07T06:22:17.808Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 55.00000000000001,
+      "first-contentful-paint": 8983.88275,
+      "largest-contentful-paint": 9363.88275,
+      "speed-index": 8983.88275,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.001678381159744172,
+      "total-byte-weight": 11760960,
+      "warnings": []
+    },
+    {
+      "variant": "restored-source",
+      "device": "desktop",
+      "route": "data",
+      "run": 2,
+      "fetchTime": "2026-10-07T06:22:32.455Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 55.00000000000001,
+      "first-contentful-paint": 8963.361949999999,
+      "largest-contentful-paint": 9403.36195,
+      "speed-index": 8963.361949999999,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.001678381159744172,
+      "total-byte-weight": 11760960,
+      "warnings": []
+    },
+    {
+      "variant": "restored-source",
+      "device": "desktop",
+      "route": "data",
+      "run": 3,
+      "fetchTime": "2026-10-07T06:22:46.461Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 55.00000000000001,
+      "first-contentful-paint": 8962.8278,
+      "largest-contentful-paint": 9422.827800000001,
+      "speed-index": 8962.8278,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.001678381159744172,
+      "total-byte-weight": 11760960,
+      "warnings": []
+    },
+    {
+      "variant": "restored-source",
+      "device": "mobile",
+      "route": "data",
+      "run": 1,
+      "fetchTime": "2026-10-07T06:23:00.592Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 42,
+      "first-contentful-paint": 3904.9138249999996,
+      "largest-contentful-paint": 56929.21185,
+      "speed-index": 4472.5949811637165,
+      "total-blocking-time": 1049.5,
+      "cumulative-layout-shift": 0,
+      "total-byte-weight": 11567077,
+      "warnings": []
+    },
+    {
+      "variant": "restored-source",
+      "device": "mobile",
+      "route": "data",
+      "run": 2,
+      "fetchTime": "2026-10-07T06:23:14.207Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 44,
+      "first-contentful-paint": 3906.142675,
+      "largest-contentful-paint": 57080.26515,
+      "speed-index": 4414.12998699825,
+      "total-blocking-time": 930.5,
+      "cumulative-layout-shift": 0,
+      "total-byte-weight": 11567077,
+      "warnings": []
+    },
+    {
+      "variant": "restored-source",
+      "device": "mobile",
+      "route": "data",
+      "run": 3,
+      "fetchTime": "2026-10-07T06:23:28.018Z",
+      "lighthouseVersion": "13.5.0",
+      "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "performance": 55.00000000000001,
+      "first-contentful-paint": 54978.88395,
+      "largest-contentful-paint": 57078.88395,
+      "speed-index": 54978.88395,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0,
+      "total-byte-weight": 11567077,
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "desktop": {
+      "performance": {
+        "median": 55.00000000000001,
+        "range": [
+          55.00000000000001,
+          55.00000000000001
+        ]
+      },
+      "first-contentful-paint": {
+        "median": 8963.361949999999,
+        "range": [
+          8962.8278,
+          8983.88275
+        ]
+      },
+      "largest-contentful-paint": {
+        "median": 9403.36195,
+        "range": [
+          9363.88275,
+          9422.827800000001
+        ]
+      },
+      "total-blocking-time": {
+        "median": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      "cumulative-layout-shift": {
+        "median": 0.001678381159744172,
+        "range": [
+          0.001678381159744172,
+          0.001678381159744172
+        ]
+      },
+      "total-byte-weight": {
+        "median": 11760960,
+        "range": [
+          11760960,
+          11760960
+        ]
+      }
+    },
+    "mobile": {
+      "performance": {
+        "median": 44,
+        "range": [
+          42,
+          55.00000000000001
+        ]
+      },
+      "first-contentful-paint": {
+        "median": 3906.142675,
+        "range": [
+          3904.9138249999996,
+          54978.88395
+        ]
+      },
+      "largest-contentful-paint": {
+        "median": 57078.88395,
+        "range": [
+          56929.21185,
+          57080.26515
+        ]
+      },
+      "total-blocking-time": {
+        "median": 930.5,
+        "range": [
+          0,
+          1049.5
+        ]
+      },
+      "cumulative-layout-shift": {
+        "median": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      "total-byte-weight": {
+        "median": 11567077,
+        "range": [
+          11567077,
+          11567077
+        ]
+      }
+    }
+  }
+}

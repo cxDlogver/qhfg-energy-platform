@@ -26,12 +26,12 @@ const results = await readFile(path.join(destination, "summary.json"), "utf8")
   .catch(() => []);
 await logStep(
   "Lighthouse 开始：" + variant,
-  "本地 Lighthouse Node API；实际表单登录 fixture 后再审计数据页，disableStorageReset 保留会话；每次独立 Chrome、冷浏览器缓存，同一生产预览压缩策略。" +
+  "本地 Lighthouse Node API；实际本地表单登录后再审计数据页（provider 以本轮记录为准），disableStorageReset 保留会话；每次独立 Chrome、冷浏览器缓存，同一生产预览压缩策略。" +
     runs +
     " 次/设备/页面。",
 );
 for (const device of ["desktop", "mobile"])
-  for (const route of ["home", "data"])
+  for (const route of (process.env.LH_ROUTES ?? "home,data").split(","))
     for (let run = 1; run <= runs; run++) {
       if (
         results.some(

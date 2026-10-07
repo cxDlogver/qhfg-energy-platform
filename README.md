@@ -4,6 +4,12 @@
 
 父仓库：[cx-learn-notes](https://github.com/cxDlogver/cx-learn-notes)。本仓库作为其独立 Git submodule 引用。
 
+## 真实能源展示恢复
+
+新增source模式，读取原本地ZIP内109栅格、99统计Excel，恢复463节点目录、真实热力图、二维/三维共享图层、点值与省市县边界。先执行 pnpm data:import "<原项目目录>" 再启动。默认是地图和统计均有文件的陆上风电5MW/25km/2021。详见[恢复范围与验证](docs/validation/restoration.md)。
+
+没有原文件的普通clone仍默认fixture，仅供流程测试；占位图不能证明真实展示。Windows旧Node可用 .\scripts\dev.ps1 自动选择兼容Node。
+
 ## 本地运行
 
 需要 Node >=22.19（本次验收 Node 24.19）、pnpm 10.28.2、Chrome。前端版本保持原工程实际运行的 Vue 3.5.13 / Vite 5.4.11 / Cesium 1.99.0 / ECharts 5.6.0 / OpenLayers 10.3.1。

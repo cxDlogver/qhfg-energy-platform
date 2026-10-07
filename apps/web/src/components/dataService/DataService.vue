@@ -86,7 +86,7 @@
             target="_blank"
             rel="noopener noreferrer"
           > -->
-          审图号：GS（2024）0650号
+          {{ mapAttribution }}
           <!-- </a> -->
         </span>
       </div>
@@ -105,11 +105,13 @@ import ChartBox from "./chart/ChartBox.vue";
 import { getLegendGraphic, getlayerListResourceData } from "@/request";
 import { Delete, Edit, Search, CirclePlus } from "@element-plus/icons-vue";
 import bus from "@/utils/bus";
+import { applySourceDefaults } from "@/utils/sourceDefaults";
 import { useI18n } from "vue-i18n";
 const { t, locale } = useI18n();
 import { useRouter } from "vue-router";
 
 const router = useRouter();
+const mapAttribution = ref("审图号：GS（2024）0650号");
 
 watch(locale, () => {
   // clearResult(); // 先清空
@@ -375,7 +377,10 @@ onMounted(async () => {
   // 添加Token验证逻辑
   try {
     // 调用一个需要认证的接口来验证Token是否有效
-    await getlayerListResourceData(locale.value);
+    const resourceResponse = await getlayerListResourceData(locale.value);
+    const runtime = resourceResponse.data?.runtime;
+    if (runtime?.basemap === "natural-earth") mapAttribution.value = "Natural Earth";
+    applySourceDefaults(runtime, locale.value);
   } catch (error) {
     // 如果Token无效，清除本地存储并跳转到登录页面
     console.error("[DataService] Token验证失败:", error);

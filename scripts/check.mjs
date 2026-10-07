@@ -7,7 +7,7 @@ for (const args of [
     "-p",
     "apps/server/tsconfig.json",
   ],
-  ["--import", "tsx", "--test", "apps/server/test/contract.test.ts"],
+  ["--import", "tsx", "--test", "apps/server/test/contract.test.ts", "apps/server/test/source.test.ts"],
 ]) {
   await new Promise((resolve, reject) => {
     const child = spawn(process.execPath, args, {

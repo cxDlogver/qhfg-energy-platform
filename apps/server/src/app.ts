@@ -17,6 +17,7 @@ import {
 } from "./model.js";
 import { DEMO_CODE, FixtureProvider } from "./fixture.js";
 import { RealProvider } from "./real.js";
+import { SourceProvider } from "./source.js";
 
 const openPaths = new Set([
   "/login",
@@ -41,10 +42,17 @@ export async function createApp(
   } = {},
 ) {
   const env = options.env ?? process.env,
-    fixture = (env.DATA_PROVIDER ?? "fixture") === "fixture";
-  const provider =
+    mode = env.DATA_PROVIDER ?? "fixture",
+    fixture = mode === "fixture" || mode === "source";
+  if (!["fixture", "source", "real"].includes(mode))
+    throw new Error("Unknown DATA_PROVIDER");
+  const provider: Provider =
     options.provider ??
-    (fixture ? await FixtureProvider.create() : new RealProvider(env));
+    (mode === "source"
+      ? await SourceProvider.create(env)
+      : fixture
+        ? await FixtureProvider.create()
+        : new RealProvider(env));
   if (provider instanceof RealProvider) await provider.init();
   if (!fixture && (!env.JWT_SECRET || env.JWT_SECRET.length < 32))
     throw new Error(
@@ -65,13 +73,11 @@ export async function createApp(
       return reply
         .code(error.status)
         .send({ code: error.code, msg: error.message, data: null });
-    return reply
-      .code(500)
-      .send({
-        code: 500,
-        msg: "服务处理失败，请检查服务配置或数据",
-        data: null,
-      });
+    return reply.code(500).send({
+      code: 500,
+      msg: "服务处理失败，请检查服务配置或数据",
+      data: null,
+    });
   });
   app.addHook("onRequest", async (req, reply) => {
     const route = req.url.split("?")[0];
@@ -104,7 +110,8 @@ export async function createApp(
   });
   app.get("/health", async () => ({
     status: "ok",
-    provider: fixture ? "fixture" : "real",
+    provider: mode,
+    ...provider.runtime?.(),
   }));
   app.post("/login", async (req) => {
     const p = req.body as Params;
@@ -192,15 +199,14 @@ export async function createApp(
     await provider.delete(codeKey(text(p, "email")));
     return message("修改成功！");
   });
-  app.get("/list/getresourcelist", async () =>
-    success(
-      tree(
-        (await provider.nodes()).filter((n) =>
-          ["rnode", "resource"].includes(n.type),
-        ),
+  app.get("/list/getresourcelist", async () => {
+    const data = tree(
+      (await provider.nodes()).filter((n) =>
+        ["rnode", "resource"].includes(n.type),
       ),
-    ),
-  );
+    );
+    return success({ ...data, runtime: provider.runtime?.() });
+  });
   for (const route of ["getdatatypelist", "getchild"])
     app.get("/list/" + route, async (req) => {
       const id = Number(text(req.query as Params, "conditionId"));

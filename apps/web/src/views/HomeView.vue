@@ -87,6 +87,7 @@ import { useRoute } from "vue-router";
 import { onMounted, onUnmounted, ref, watch } from "vue";
 import { ElMessage } from "element-plus";
 import bus from "@/utils/bus";
+import { initializeSourceDefaults } from "@/utils/sourceDefaults";
 import { useI18n } from "vue-i18n";
 import languageList from "@/assets/json/locales/config.json";
 import { useRouter } from "vue-router";
@@ -127,11 +128,12 @@ watch(
   { immediate: true }
 );
 // 切换菜单
-const changeMenu = (value) => {
+const changeMenu = async (value) => {
   if (value === "language") {
     return;
   }
   if (value === "dataService") {
+    try { await initializeSourceDefaults(locale.value); } catch (_) {}
     // 判断并写入默认数据
     let lang = locale.value; //获取当前语言
     let key =
@@ -178,7 +180,7 @@ const changeMenu = (value) => {
 };
 
 // 切换语言
-const changeLanguage = (code, event) => {
+const changeLanguage = async (code, event) => {
   locale.value = code;
   localStorage.setItem("language", code); // 修改存储的key名为更通用的"language"
   // 方案二：切换语言时自动写入对应语言的默认数据
@@ -215,6 +217,7 @@ const changeLanguage = (code, event) => {
   }
   // 阻止事件冒泡，防止触发路由导航
   event?.stopPropagation();
+  try { await initializeSourceDefaults(code, true); } catch (_) {}
   bus.emit("changeLanguage", code);
 };
 

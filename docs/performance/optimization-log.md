@@ -434,3 +434,79 @@ mobile/data: performance 55.00000000000001 → 43; LCP 102921.6 → 57304.4ms
 ## 2026-10-07 05:06:17 — 发布空间故障与恢复
 
 首次git add因F盘空间耗尽失败，未产生提交或推送。核对目标位于本项目、目录无reparse链接且审计进程已结束后，仅删除忽略的.local/lighthouse临时Chrome profiles，释放约1.14GB。48份JSON/HTML报告、源码、私有冻结源码与原提供目录均保留；新仓库core.autocrlf=false，不改全局设置。随后重新提交发布。
+
+## 2026-10-07 13:51:13 — 真实展示恢复：本地资料与授权边界
+
+当前后端 health=fixture。浏览器复现接口200但返回占位瓦片，仅一条资源分支；直接空缓存进入不创建业务图层。原目录有汇总表、TIFF/QGIS资料。自动审批拒绝使用原凭据连接具体远程服务，已向用户明确申请只读授权；等待期间仅检查本地资料，不尝试绕过。
+
+## 2026-10-07 14:00:34 — 本地真实数据登记完成
+
+{"nodes":463,"resources":["陆上风电","海上风电","高空风电","集中式光伏发电","分布式光伏发电","光热发电","水力发电","电网侧","用户侧"],"products":41,"rasters":109,"workbooks":99,"skippedLargeRasters":6,"archiveEntries":1878,"defaultMap":"/io/data/发电侧/风力发电/低空风电/陆上风电/潜力数据/2.5MW/容量因子/10km/年/2021.qgs","originalFilesCopied":false}；原始ZIP只读、按需解码，私有索引和.env不提交，不把未提供的日期伪装为有效图层。
+
+## 2026-10-07 14:02:16 — 构建通过
+
+TypeScript 后端与 Vite 前端生产构建通过；仅生产产物用于性能测量。
+
+## 2026-10-07 14:03:49 — 本地真实数据登记完成
+
+{"nodes":463,"resources":["陆上风电","海上风电","高空风电","集中式光伏发电","分布式光伏发电","光热发电","水力发电","电网侧","用户侧"],"products":41,"rasters":109,"workbooks":99,"skippedLargeRasters":6,"archiveEntries":1878,"defaultMap":"/io/data/发电侧/风力发电/低空风电/陆上风电/潜力数据/5MW/容量因子/25km/年/2021.qgs","originalFilesCopied":false}；原始ZIP只读、按需解码，私有索引和.env不提交，不把未提供的日期伪装为有效图层。
+
+## 2026-10-07 14:04:13 — 构建通过
+
+TypeScript 后端与 Vite 前端生产构建通过；仅生产产物用于性能测量。
+
+## 2026-10-07 14:11:48 — 构建通过
+
+TypeScript 后端与 Vite 前端生产构建通过；仅生产产物用于性能测量。
+
+## 2026-10-07 14:18:00 — 本地真实数据登记完成
+
+{"nodes":463,"resources":["陆上风电","海上风电","高空风电","集中式光伏发电","分布式光伏发电","光热发电","水力发电","电网侧","用户侧"],"products":41,"rasters":109,"workbooks":99,"skippedLargeRasters":6,"archiveEntries":1878,"defaultMap":"/io/data/发电侧/风力发电/低空风电/陆上风电/潜力数据/5MW/容量因子/25km/年/2021.qgs","originalFilesCopied":false}；原始ZIP只读、按需解码，私有索引和.env不提交，不把未提供的日期伪装为有效图层。
+
+## 2026-10-07 14:21:58 — 真实展示恢复：功能与原数据验证
+
+source已上线：9资源叶/463节点、41产品/109栅格/99Excel；自然地理底图、原省市县SHP。纠正Y2021列与原统计国家名；缺失日期报错，NoData保留null。实际193国家统计，有效格点中国/山东/德州/齐河0.13340266048908234、8行下载、光伏四级筛选、三维共享和隐藏暂停通过。原4契约组+1独立GeoTIFF组通过。远程授权仍待确认，未访问私有服务。
+
+## 2026-10-07 14:22:12 — Lighthouse 开始：restored-source
+
+本地 Lighthouse Node API；实际本地表单登录后再审计数据页（provider 以本轮记录为准），disableStorageReset 保留会话；每次独立 Chrome、冷浏览器缓存，同一生产预览压缩策略。3 次/设备/页面。
+
+## 2026-10-07 14:22:26 — Lighthouse 完成 restored-source/desktop-data-1
+
+{"variant":"restored-source","device":"desktop","route":"data","run":1,"fetchTime":"2026-10-07T06:22:17.808Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":55.00000000000001,"first-contentful-paint":8983.88275,"largest-contentful-paint":9363.88275,"speed-index":8983.88275,"total-blocking-time":0,"cumulative-layout-shift":0.001678381159744172,"total-byte-weight":11760960,"warnings":[]}
+
+## 2026-10-07 14:22:41 — Lighthouse 完成 restored-source/desktop-data-2
+
+{"variant":"restored-source","device":"desktop","route":"data","run":2,"fetchTime":"2026-10-07T06:22:32.455Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":55.00000000000001,"first-contentful-paint":8963.361949999999,"largest-contentful-paint":9403.36195,"speed-index":8963.361949999999,"total-blocking-time":0,"cumulative-layout-shift":0.001678381159744172,"total-byte-weight":11760960,"warnings":[]}
+
+## 2026-10-07 14:22:55 — Lighthouse 完成 restored-source/desktop-data-3
+
+{"variant":"restored-source","device":"desktop","route":"data","run":3,"fetchTime":"2026-10-07T06:22:46.461Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":55.00000000000001,"first-contentful-paint":8962.8278,"largest-contentful-paint":9422.827800000001,"speed-index":8962.8278,"total-blocking-time":0,"cumulative-layout-shift":0.001678381159744172,"total-byte-weight":11760960,"warnings":[]}
+
+## 2026-10-07 14:23:08 — Lighthouse 完成 restored-source/mobile-data-1
+
+{"variant":"restored-source","device":"mobile","route":"data","run":1,"fetchTime":"2026-10-07T06:23:00.592Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":42,"first-contentful-paint":3904.9138249999996,"largest-contentful-paint":56929.21185,"speed-index":4472.5949811637165,"total-blocking-time":1049.5,"cumulative-layout-shift":0,"total-byte-weight":11567077,"warnings":[]}
+
+## 2026-10-07 14:23:22 — Lighthouse 完成 restored-source/mobile-data-2
+
+{"variant":"restored-source","device":"mobile","route":"data","run":2,"fetchTime":"2026-10-07T06:23:14.207Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":44,"first-contentful-paint":3906.142675,"largest-contentful-paint":57080.26515,"speed-index":4414.12998699825,"total-blocking-time":930.5,"cumulative-layout-shift":0,"total-byte-weight":11567077,"warnings":[]}
+
+## 2026-10-07 14:23:35 — Lighthouse 完成 restored-source/mobile-data-3
+
+{"variant":"restored-source","device":"mobile","route":"data","run":3,"fetchTime":"2026-10-07T06:23:28.018Z","lighthouseVersion":"13.5.0","browserVersion":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","performance":55.00000000000001,"first-contentful-paint":54978.88395,"largest-contentful-paint":57078.88395,"speed-index":54978.88395,"total-blocking-time":0,"cumulative-layout-shift":0,"total-byte-weight":11567077,"warnings":[]}
+
+## 2026-10-07 14:33:46 — 真实数据场景Lighthouse完成
+
+{"desktop":{"performance":{"median":55.00000000000001,"range":[55.00000000000001,55.00000000000001]},"first-contentful-paint":{"median":8963.361949999999,"range":[8962.8278,8983.88275]},"largest-contentful-paint":{"median":9403.36195,"range":[9363.88275,9422.827800000001]},"total-blocking-time":{"median":0,"range":[0,0]},"cumulative-layout-shift":{"median":0.001678381159744172,"range":[0.001678381159744172,0.001678381159744172]},"total-byte-weight":{"median":11760960,"range":[11760960,11760960]}},"mobile":{"performance":{"median":44,"range":[42,55.00000000000001]},"first-contentful-paint":{"median":3906.142675,"range":[3904.9138249999996,54978.88395]},"largest-contentful-paint":{"median":57078.88395,"range":[56929.21185,57080.26515]},"total-blocking-time":{"median":930.5,"range":[0,1049.5]},"cumulative-layout-shift":{"median":0,"range":[0,0]},"total-byte-weight":{"median":11567077,"range":[11567077,11567077]}}}；6报告独立保存，不与旧fixture直接混比。移动字体/初始化瓶颈仍在，控制面板CSS与当前已发布版本一致。
+
+## 2026-10-07 14:36:31 — 真实展示恢复公开检查通过
+
+{"runAt":"2026-10-07T06:36:31.345Z","files":316,"bytes":192871467,"findings":[],"scope":"Git index files only; excludes user untracked notes, ignored original business index, original files and private credentials"}
+
+## 2026-10-07 14:43:35 — 真实展示恢复收尾检查
+
+Windows dev.ps1 已实测选 Node 24.19 并启动 source API18080 与开发页5173；开发及生产预览均HTTP200。新Lighthouse HTML仅删除空白行末空格，JSON指标保留；Git格式检查允许已有Windows CRLF。父仓库另有未推送提交，引用更新将从远程main单独生成，保留无关本地提交。
+
+## 2026-10-07 14:43:36 — 真实展示恢复公开检查通过
+
+{"runAt":"2026-10-07T06:43:36.172Z","files":316,"bytes":192872275,"findings":[],"scope":"Git index files only; excludes user untracked notes, ignored original business index, original files and private credentials"}

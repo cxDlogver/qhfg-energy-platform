@@ -17,7 +17,8 @@
     "perf:compare": "node scripts/compare-performance.mjs",
     "assets:optimize": "node scripts/optimize-assets.mjs",
     "baseline:build": "node scripts/baseline.mjs",
-    "security:check": "node scripts/check-public-files.mjs"
+    "security:check": "node scripts/check-public-files.mjs",
+    "data:import": "node scripts/import-source-data.mjs"
   },
   "devDependencies": {
     "chrome-launcher": "1.2.1",

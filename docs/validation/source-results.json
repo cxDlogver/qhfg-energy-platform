@@ -1,0 +1,114 @@
+{
+  "runAt": "2026-10-07T06:33:46.279Z",
+  "browser": {
+    "health": {
+      "status": "ok",
+      "provider": "source",
+      "basemap": "natural-earth",
+      "rasters": 109,
+      "products": 41,
+      "defaults": {
+        "chinese": {
+          "filterResultList": [
+            "陆上风电 容量因子(5MW,25km,2021)"
+          ],
+          "selectedResults": [
+            true
+          ],
+          "timeResult": [
+            "2021"
+          ],
+          "mapPathUrlList": [
+            "发电侧/风力发电/低空风电/陆上风电/潜力数据/5MW/容量因子/25km/年"
+          ],
+          "dataUnlitList": [
+            ""
+          ],
+          "dataTypeThreeList": [
+            "容量因子"
+          ]
+        },
+        "english": {
+          "filterResultList": [
+            "Onshore Wind Power Capacity Factor(5MW,25km,2021)"
+          ],
+          "selectedResults": [
+            true
+          ],
+          "timeResult": [
+            "2021"
+          ],
+          "mapPathUrlList": [
+            "发电侧/风力发电/低空风电/陆上风电/潜力数据/5MW/容量因子/25km/年"
+          ],
+          "dataUnlitList": [
+            ""
+          ],
+          "dataTypeThreeList": [
+            "Capacity Factor"
+          ]
+        }
+      }
+    },
+    "resourceLabels": "发电侧\n风力发电\n低空风电\n陆上风电\n海上风电\n高空风电\n光伏发电\n集中式光伏发电\n分布式光伏发电\n光热发电\n水力发电\n电网侧\n用户侧",
+    "defaultMap": "/io/data/发电侧/风力发电/低空风电/陆上风电/潜力数据/5MW/容量因子/25km/年/2021.qgs",
+    "mapColorDeviation": [
+      58.368799056745154,
+      74.20389368390147,
+      65.06886079750869
+    ],
+    "countries": 193,
+    "series": 193,
+    "years": [
+      "2021"
+    ],
+    "threeD": {
+      "renderedFrames": 67,
+      "active": true,
+      "loop": true,
+      "rotating": true,
+      "camera": [
+        -9304597.154360471,
+        22778319.474655442,
+        17204392.747394193
+      ]
+    },
+    "errors": [],
+    "failedResponses": []
+  },
+  "interaction": {
+    "checks": [
+      "Direct fresh source entry selects a registered real layer",
+      "Actual China point value updates real table",
+      "Agreement download exports actual source rows",
+      "Four-level PV filter selects a different real product",
+      "3D queries the shared real PV layer and stops rotation",
+      "Hidden 3D still pauses rendering"
+    ],
+    "point": {
+      "value": 0.13340266048908234,
+      "area": {
+        "国家": "中国",
+        "地区": "中国",
+        "省级": "山东省",
+        "地级": "德州市",
+        "县级": "齐河县",
+        "区域": "亚洲"
+      }
+    },
+    "downloadRows": 8,
+    "errors": []
+  },
+  "controlPanelCssUnchanged": {
+    "apps/web/src/components/dataService/DataService.vue": true,
+    "apps/web/src/components/dataService/Map2D.vue": true,
+    "apps/web/src/views/HomeView.vue": true
+  },
+  "startup": {
+    "script": "scripts/dev.ps1",
+    "node": "24.19.0",
+    "provider": "source",
+    "devStatus": 200,
+    "previewStatus": 200
+  }
+}

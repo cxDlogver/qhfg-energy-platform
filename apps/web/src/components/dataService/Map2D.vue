@@ -94,7 +94,9 @@ import GeoJSON from "ol/format/GeoJSON"; // GeoJSON 格式解析器
 import TileGrid from "ol/tilegrid/TileGrid";
 
 // ==================== 项目内部依赖 ====================
-import bus from "@/utils/bus"; // 事件总线（用于跨组件通信）
+import bus from "@/utils/bus";
+import { ElMessage } from "element-plus";
+import TileState from "ol/TileState";
 import { getPointData } from "@/request/index"; // 获取点位数据的 API 接口
 import request from "@/request/axios"; // Axios 请求实例
 
@@ -196,6 +198,7 @@ const qgjZoomLayer1 = shallowRef(null);
 // 多分辨率瓦片网格：根据实际地图坐标系和服务端配置，调整 origin 和 resolutions 参数，以确保瓦片正确对齐和显示。
 // 【性能优化】动态创建 WMS 业务数据图层
 const createQgjZoomLayer1 = () => {
+  let layerErrorShown = false;
   const customTileGrid = new TileGrid({
     tileSize: 1024, // 修改瓦片大小
     // 以下参数需根据实际坐标系和服务端配置调整
@@ -231,8 +234,13 @@ const createQgjZoomLayer1 = () => {
           Token: `${token}`,
         },
       })
-        .then((response) => {
-          if (!response.ok) {
+        .then(async (response) => {
+          if (!response.ok || !response.headers.get("content-type")?.startsWith("image/")) {
+            if (props.active && !layerErrorShown) {
+              layerErrorShown = true;
+              const body = await response.json().catch(() => ({}));
+              ElMessage.error(body.msg || "图层加载失败，请检查原始数据");
+            }
             throw new Error("Network response was not ok");
           }
           return response.blob();
@@ -295,6 +303,7 @@ const createQgjZoomLayer1 = () => {
           tryAssign(10);
         })
         .catch((err) => {
+          imageTile.setState(TileState.ERROR);
           console.error("Tile loading error:", err);
         });
     },
@@ -1104,7 +1113,7 @@ watch(
       const layers = getBaseLayersByLocale(locale.value);
 
       // 将业务数据图层插入到图层数组中
-      layers.push(qgjZoomLayer1.value);
+      layers.splice(1, 0, qgjZoomLayer1.value);
 
       // 可选：添加高亮图层（当前被注释掉）
       // layers.push(highLightLayer);
@@ -1113,7 +1122,9 @@ watch(
       map.value.setLayers(layers);
 
       // 重新绑定事件监听器
+      map.value.un("click", handleMapClick);
       map.value.on("click", handleMapClick); // 点击事件
+      map.value.un("moveend", handleViewChange);
       map.value.on("moveend", handleViewChange); // 视图变化事件
     } else {
       // 如果路径为空，则只显示基础图层
@@ -1182,8 +1193,10 @@ watch(locale, (newLocale) => {
     map.value.setLayers(layers);
 
     // 重新绑定事件监听器
-    map.value.on("click", handleMapClick);
-    map.value.on("moveend", handleViewChange);
+    map.value.un("click", handleMapClick);
+      map.value.on("click", handleMapClick);
+    map.value.un("moveend", handleViewChange);
+      map.value.on("moveend", handleViewChange);
   } else {
     // 没有业务数据时，只更新基础图层
     map.value.setLayers(getBaseLayersByLocale(newLocale));

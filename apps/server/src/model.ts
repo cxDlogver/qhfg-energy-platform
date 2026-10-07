@@ -120,6 +120,7 @@ export function filterColumns(table: Table, language: string): Table {
   };
 }
 export interface Provider {
+  runtime?(): Record<string, unknown>;
   user(
     field: "username" | "email" | "phone",
     value: string,
