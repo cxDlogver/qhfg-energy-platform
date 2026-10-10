@@ -60,10 +60,10 @@
 - [性能测量协议](../performance/methodology.md)、[结果](../performance/results.md)、[完整优化日志](../performance/optimization-log.md)：实验条件、性能数字、失败候选
 - [功能验收](../validation/results.md)、[真实能源数据恢复](../validation/restoration.md)、[Source 性能报告](../performance/restored-source.md)：不同验证环境的能力边界
 
-## 4. 草稿迁移及事实核验规则
+## 4. 内容归档及事实核验规则
 
-原草稿第一题纳入 Q01，第二题纳入 Q03，第三题的资源、缓存、请求、取消和防抖机制进入 Q04–Q11、Q15，第四题的分层渲染、图层更新及边界进入 Q12–Q16；另补充 Q02 与 Q17–Q20 等此前未独立展开的面试问题。**原草稿仍保留**，防止历史机制或源码细节在重新编排时丢失。
+原有四题讨论已完整整合到本目录：项目介绍对应 Q01，性能开销对应 Q03，资源缓存、请求去重与取消对应 Q04–Q11、Q15，分层渲染与局部更新对应 Q12–Q16；同时补充完整业务链路 Q02 和性能验证 Q17–Q20。临时讨论草稿在正式归档和核对完成后已删除，后续以这五篇正式问答为维护入口。
 
-[原有完整草稿](https://github.com/cxDlogver/cx-learn-notes/blob/main/Full-Stack-AI-NOTES/drafts/能源数据可视化系统-面试答辩草稿.md) · [原项目分析](../能源平台项目.md) · [简历描述](https://github.com/cxDlogver/cx-learn-notes/blob/main/Full-Stack-AI-NOTES/resource/简历.md)
+[原项目分析](../能源平台项目.md) · [简历描述](https://github.com/cxDlogver/cx-learn-notes/blob/main/Full-Stack-AI-NOTES/resource/简历.md)
 
 整理和答辩时必须区分：**原项目个人职责**、**原二维功能已有能力**、**后续代码重构新增内容**、**Fixture 的隔离验证**、**Source 真实局部数据验证**以及**Real 模式尚需受控生产验收**。源码能证明代码行为，不能代替历史个人贡献或线上效果证明。报告中的移动数据页性能回退、超大 GeoTIFF 未覆盖范围、未验证真实 QGIS 连接必须如实保留。
