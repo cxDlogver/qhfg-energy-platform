@@ -46,6 +46,10 @@ Chrome 自动从 Windows 常用路径读取，其他平台设置 `CHROME_PATH`�
 
 原提供目录没有数据库 DDL/完整可运行的能源工程及 Excel 部署树，本仓库不会猜测生产 schema 或自动向现有数据库写入。真实服务可达不代表业务验收通过；必须用受控账号/数据核对注册邮件、账户、图层、统计与下载。未调用的旧后端接口及 QHFG.Server 不迁移。
 
+## 项目面试答辩专项
+
+[项目面试答辩目录：20 道递进问题、完整源码机制及性能验证](docs/interview/README.md) · [项目性能问题](docs/interview/01-项目介绍与性能问题定位.md) · [资源和缓存](docs/interview/02-地图资源加载与缓存优化.md) · [网络请求治理](docs/interview/03-网络请求与异步控制优化.md) · [分层渲染](docs/interview/04-分层渲染与地图交互优化.md) · [性能验证和取舍](docs/interview/05-性能验证与工程取舍.md)
+
 ## 性能与验证
 
 [指标结果](docs/performance/results.md) · [完整优化过程](docs/performance/optimization-log.md) · [决策](docs/design/decisions.md)
